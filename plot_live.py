@@ -16,6 +16,7 @@ X,Y2g,Y5g = [],[],[]
 while not os.path.isfile('STOP'):
    cells = myiwlist.scan()
    cells = myiwlist.parse(cells)
+   nets = [C.essid for C in cells]
 
    now = dt.datetime.now()
    print(now)
